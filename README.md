@@ -117,6 +117,10 @@ And the model saved to the configured path.
 - Store predictions and evaluation metrics to a CSV or a monitoring store.
 
 ## Run the code using
-`cd "/Users/viswa/Desktop/data/FInal Project" && mvn -q clean package -DskipTests`
-`cd "/Users/viswa/Desktop/data/FInal Project" && java --add-opens=java.base/sun.nio.ch=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED -cp "target/spark-project-1.0.jar:$(mvn -q dependency:build-classpath -Dmdep.outputFile=/dev/stdout 2>/dev/null)" ImageProcessor 2>&1`
+```bash
+cd "/Users/viswa/Desktop/data/FInal Project" && mvn -q clean package -DskipTests
+```
+```bash
+cd "/Users/viswa/Desktop/data/FInal Project" && java --add-opens=java.base/sun.nio.ch=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED -cp "target/spark-project-1.0.jar:$(mvn -q dependency:build-classpath -Dmdep.outputFile=/dev/stdout 2>/dev/null)" ImageProcessor 2>&1
+```
 
